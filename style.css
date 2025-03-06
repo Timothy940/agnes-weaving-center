@@ -1,0 +1,96 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    background-color: white;
+}
+
+/* Container for centering content */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Responsive Layout */
+.main-content {
+    display: flex;
+    flex-direction: column; /* Stack columns vertically on small screens */
+}
+
+.left, .right {
+    width: 100%; /* Full width on small screens */
+    padding: 20px;
+}
+
+.left {
+    background-color: hotpink;
+}
+
+.right {
+    background-color: white;
+}
+
+/* Responsive Typography */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 2rem; /* 32px */
+}
+
+h2 {
+    font-size: 1.5rem; /* 24px */
+}
+
+p {
+    font-size: 1rem; /* 16px */
+    text-align: left;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center images */
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets (768px and up) */
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row; /* Side-by-side layout on larger screens */
+    }
+
+    .left {
+        width: 30%; /* Adjust width for larger screens */
+    }
+
+    .right {
+        width: 70%; /* Adjust width for larger screens */
+    }
+}
+
+/* Desktops (1024px and up) */
+@media (min-width: 1024px) {
+    .left {
+        width: 20%; /* Adjust width for desktops */
+    }
+
+    .right {
+        width: 80%; /* Adjust width for desktops */
+    }
+}
