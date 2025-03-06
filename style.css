@@ -49,7 +49,7 @@ body {
 }
 
 .nav-button:hover {
-    background-color: #444;
+    background-color: black;
 }
 /* Remove underline for WhatsApp button */
 a[href="http://Wa.me/+233247806555"] button {
