@@ -51,6 +51,15 @@ body {
 .nav-button:hover {
     background-color: #444;
 }
+/* Remove underline for WhatsApp button */
+a[href="http://Wa.me/+233247806555"] button {
+    text-decoration: none;
+}
+
+/* Remove underline for Our Products button */
+a[href="ourproducts.html"] button {
+    text-decoration: none;
+}
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
