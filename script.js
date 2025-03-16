@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".whatsapp-button").forEach(button => {
         button.addEventListener("click", function () {
             console.log("WhatsApp button clicked!");
-            const phoneNumber = "+233593296078";
+            const phoneNumber = "+233247806555";
             const productItem = this.closest(".product-item");
             const productImage = productItem.querySelector("img");
     
